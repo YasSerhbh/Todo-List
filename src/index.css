@@ -5,9 +5,79 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background: #46529d;
+  color: #fff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 60%;
+    margin: 10px auto;
+}
+.text-center {
+    text-align: center;
+}
+
+.listitems {
+    background-color: #fff;
+    color: #46529d;
+}
+
+.listitems p {
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.listitems span {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    border: 0.3px solid #ccc;
+}
+.listitems span.title {
+    background-color: #2ebaae;
+    color: #fff;
+}
+
+.listitems span.name, form input[type="text"] {
+    width: 60%;
+}
+.listitems span.age, form input[type="number"] {
+    width: 30%;
+}
+.listitems span.action, form input[type="submit"] {
+    width: 10%;
+}
+
+
+.listitems span.icon {
+    color: red;
+    cursor: pointer;
+}
+
+form input {
+    padding: 10px;
+    background: #ebebeb;
+    border: transparent;
+    border: 0.3px solid #ccc;
+    outline: none;
+}
+
+form input[type="submit"] {
+    background: #2ebaae;
+    color: #fff;
+    cursor: pointer;
+    border: 0.3px solid #2ebaae;
 }
